@@ -5,8 +5,8 @@ using UnityEngine;
 
 public class PlayerDamage : MonoBehaviour
 {
-    [SerializeField] int playerHealth = 3;
-    [SerializeField] float iFrameTime = 2f;
+    public int playerHealth = 3;
+    [SerializeField] public float iFrameTime = 2f;
     bool iFrame = false;
     void OnCollisionStay2D(Collision2D other)
     {

@@ -271,6 +271,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: abed6cb24ffaff041aff0c618548b638, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  expOrb: {fileID: 0}
+  enemyPrefab: {fileID: 0}
 --- !u!1 &706609874 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3857108595476305988, guid: 4d8bcc87b8de80541abcb4a9da1b01b6, type: 3}
@@ -288,7 +290,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed93f84094e0a17498851eb0eca51501, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletReload: 0.1
+  bulletReload: 0.2
   playerBulletSpeed: 15
   playerBullet: {fileID: 5388470645285570141, guid: 0554174ba771fde4885e2ccc76d880f9, type: 3}
   playerGun: {fileID: 1984275001}
@@ -351,6 +353,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerHealth: 5
   iFrameTime: 0.5
+--- !u!114 &706609887
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 706609874}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f455d360306fef4792d9f3c1197dfbc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &900387838
 GameObject:
   m_ObjectHideFlags: 0
@@ -382,8 +396,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyPrefab: {fileID: 2038548715519601400, guid: dfc3124fa26e1184a853deed57e3f578, type: 3}
   minSpawnTime: 5
-  maxSpawnTime: 10
-  spawnDistance: 10
+  maxSpawnTime: 20
+  spawnDistance: 15
 --- !u!4 &900387840
 Transform:
   m_ObjectHideFlags: 0
@@ -491,6 +505,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -2371708204141134761, guid: dfc3124fa26e1184a853deed57e3f578, type: 3}
+      propertyPath: expOrb
+      value: 
+      objectReference: {fileID: 976587954701194749, guid: 7487ef1a9a2d94543b1fdfbe30b4ea0f, type: 3}
+    - target: {fileID: -2371708204141134761, guid: dfc3124fa26e1184a853deed57e3f578, type: 3}
+      propertyPath: enemyPrefab
+      value: 
+      objectReference: {fileID: 2038548715519601400, guid: dfc3124fa26e1184a853deed57e3f578, type: 3}
     - target: {fileID: 655360008816538339, guid: dfc3124fa26e1184a853deed57e3f578, type: 3}
       propertyPath: player
       value: 
@@ -646,6 +668,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 3857108595476305988, guid: 4d8bcc87b8de80541abcb4a9da1b01b6, type: 3}
       insertIndex: -1
       addedObject: {fileID: 706609881}
+    - targetCorrespondingSourceObject: {fileID: 3857108595476305988, guid: 4d8bcc87b8de80541abcb4a9da1b01b6, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 706609887}
   m_SourcePrefab: {fileID: 100100000, guid: 4d8bcc87b8de80541abcb4a9da1b01b6, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
