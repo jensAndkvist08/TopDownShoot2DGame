@@ -6,7 +6,7 @@ using UnityEngine.InputSystem;
 public class PlayerShoot : MonoBehaviour
 {
     [SerializeField] public float bulletReload = 0.5f; 
-    public float playerBulletSpeed = 2f;
+    [SerializeField] float playerBulletSpeed = 2f;
     [SerializeField] GameObject playerBullet;
     [SerializeField] GameObject playerGun;
     bool reloading = false;

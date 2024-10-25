@@ -10,6 +10,8 @@ public class EnemySpawner : MonoBehaviour
     [SerializeField] float spawnDistance = 10f;
     Vector2 screenBounds;
     Vector2 spawnPos;
+
+
     void Start()
     {
         spawnEnemy();
@@ -40,5 +42,6 @@ public class EnemySpawner : MonoBehaviour
         Invoke("spawnEnemy", spawnTime);
         Invoke("spawnEnemy", spawnTime);
     }
-   
+
+
 }

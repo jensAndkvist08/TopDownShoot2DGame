@@ -12,7 +12,7 @@ public class EnemyDamage : MonoBehaviour
         {
             
             Destroy(gameObject);
-            Instantiate(expOrb, enemyPrefab.transform.position, transform.rotation);
+            
         }
 
     }
